@@ -1,6 +1,13 @@
 #content{
-    width:50%;
+    width:70%;
     margin: 0 auto;
+    background-color: #C8E6C9;
+}
+body{
+    background-color: #33691E;
+}
+article{
+    padding-left: 10px;
 }
 
 #navbar li{
@@ -10,19 +17,33 @@
 
 }
 #navbar{
+    font-size: 20px;
+    margin-top: -10px;
     text-align: center;
+    margin-bottom: 50px;
+}
+
+#banner{
+    padding-left: 10px;
+    color: white;
+    font-size: 145%;
+    background-color: #2E7D32;
+}
+
+.lesson{
+    text-align: justify;
 }
 
 #sidebar
 {
 float: right;
 width: 200px;
-padding: 13% 0%;
-margin: 0 20px 0 0;
+padding: 8% 0%;
+margin: 0 24px 0 0;
 display: inline;
 }
 #sidebar h3 { margin: 0; }
 
 #introducao{
-    
+    font-size: 160%
 }
