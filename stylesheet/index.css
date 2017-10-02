@@ -19,13 +19,16 @@ article{
 
 }
 #navbar{
+    color: white;
     font-size: 20px;
-    margin-top: -10px;
+    margin-top: -15px;
     text-align: center;
     margin-bottom: 50px;
 }
 
 #banner{
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
     padding-left: 10px;
     color: white;
     font-size: 145%;
@@ -36,14 +39,25 @@ article{
     text-align: justify;
 }
 
+#footer{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    background-color: #2E7D32;
+    color: white;
+    font-size: 80%;
+}
 
 #sidebar
 {
+border-radius: 8px;
+border-bottom-style:ridge;
+background-color: #81C784;
 float: right;
-width: 200px;
-padding: 8% 0%;
-margin: 0 24px 0 0;
-display: inline;
+width: 180px;
+padding: 0% 0% 0% 0%;
+margin: 7% 3% 0 0;
 }
 #sidebar h3 { margin: 0; }
 
