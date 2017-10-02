@@ -36,6 +36,7 @@ article{
     text-align: justify;
 }
 
+
 #sidebar
 {
 float: right;
@@ -47,5 +48,5 @@ display: inline;
 #sidebar h3 { margin: 0; }
 
 #introducao{
-    font-size: 160%
+    font-size: 180%
 }
