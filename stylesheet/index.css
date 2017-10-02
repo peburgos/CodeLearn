@@ -62,5 +62,11 @@ margin: 7% 3% 0 0;
 #sidebar h3 { margin: 0; }
 
 #introducao{
-    font-size: 180%
+    font-size: 180%;
+}
+
+#aboutimg{
+    border-radius:150px;
+    vertical-align:middle;
+    width=:25%;
 }
