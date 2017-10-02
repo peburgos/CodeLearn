@@ -12,7 +12,7 @@
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="variaveis.html">Dados</a></li>
-                    <li><a href="condicoes.html">Condições</a></li>
+                    <li><a href="condicoes.html">Condicionais</a></li>
                     <li><a href="avancado.html">Funções e Objetos</a></li>
                     <li><a href="about.html">Sobre o autor</a></li>
                 </ul>
@@ -30,21 +30,23 @@
             </nav>
             <section>
                 <article class="lesson" id="dados">
-                        <header id="introducao">Tipos de Variaveis</header>
-                            <p>Para entender programação é preciso primeiro entender a forma como os dados que irão ser manipulados pelo programa são vistos pelo computador. Tudo aquilo que irá ser utilizado pelo computador é armazenado na sua memória RAM. Para permitir aos programadores escreverem seus programas de uma forma mais simplificada e manipular mais fácilmente essa o que está armazenado nessa memória surgiu o que é conhecido como variaveis. As variaveis são "rótulos" que colocamos para indentificar melhor o conteúdo que está contido dentro delas. Entretanto, certos tipos de dados possuem algumas características bem diferentes de outros e trata-los da mesma maneira seria bem problemático (não podemos somar o numeral 1 a uma letra e esperar obter um resultado válido por exemplo). Assim, surgiram os tipos de variaveis.  Os tipos de variáveis servem para especificar qual é o tipo de certa variavel, e com isso quais operações são possíveis de se fazer com essa variavel. São eles: booleano (boolean), inteiro(integer), ponto flutuante(float), caractere(character), vetor(array), e cadeia de caracteres(string). Vamos ver agora o que significa cada um deles. </p>
+                    <header id="introducao">Tipos de Variaveis</header>
+                    <p>Para entender programação é preciso primeiro entender a forma como os dados que irão ser manipulados pelo programa são vistos pelo computador. Tudo aquilo que irá ser utilizado pelo computador é armazenado na sua memória RAM. Para permitir aos programadores escreverem seus programas de uma forma mais simplificada e manipular mais fácilmente essa o que está armazenado nessa memória surgiu o que é conhecido como variaveis. As variaveis são "rótulos" que colocamos para indentificar melhor o conteúdo que está contido dentro delas. Entretanto, certos tipos de dados possuem algumas características bem diferentes de outros e trata-los da mesma maneira seria bem problemático (não podemos somar o numeral 1 a uma letra e esperar obter um resultado válido por exemplo). Assim, surgiram os tipos de variaveis.  Os tipos de variáveis servem para especificar qual é o tipo de certa variavel, e com isso quais operações são possíveis de se fazer com essa variavel. São eles: booleano (boolean), inteiro(integer), ponto flutuante(float), caractere(character), vetor(array), e cadeia de caracteres(string). Vamos ver agora o que significa cada um deles. </p>
 
-                            <h2 id="boolean">Boolean</h2>
-                            <p>O Boolean é o tipo mais simples de todas as variaveis, ele apenas armazena um valor, que pode ser tanto true (verdadeiro) quanto false (falso). Ele é muito utilizado para checar condições (que iremos ver mais para frente).</p>
-                            <h2 id="integer">Integer</h2>
-                            <p>O Integer representa o conjunto dos números inteiros. Ele é utilizado para armazenar numeros sem parte fracionária. Com eles é possível somar, subtrair, multiplicar ou dividir (contanto que o resultado seja também um inteiro) outros inteiros.</p>
-                            <h2 id="float">Float</h2>
-                            <p>Um float armazena números com parte fracionária (3,14 por exemplo). Ele equivale ao conjunto dos racionais. É possivel converter um integer em um float sem nenhum problema, entretanto é preciso tomar cuidado, pois ao se converter um float em um int toda a sua será desprezada e o número arredondado ao inteiro mais próximo.</p>
-                            <h2 id="char">Char</h2>
-                            <h2 id="array">Array</h2>
-                            <h2 id="string">String</h2>
-
-
-                            <p>Integer et ullamcorper lorem. Ut mi leo, rhoncus ut lacus a, posuere lacinia tellus. Suspendisse potenti. Morbi dui lorem, ullamcorper ultrices mauris quis, finibus pharetra enim. Suspendisse convallis a nibh ut vulputate. Pellentesque dignissim lacinia justo. Proin id tristique elit. Nam ullamcorper libero at rhoncus consequat. Aenean pulvinar eleifend nisl ut efficitur. Proin condimentum mi ut condimentum dignissim. Nam sit amet neque ac tellus egestas tristique eget vitae magna. Sed scelerisque mi non commodo tempus. Suspendisse euismod sem mattis, interdum leo at, vestibulum elit. Phasellus ac lorem commodo, rhoncus libero ut, blandit ipsum.</p>
+                    <h2 id="boolean">Boolean</h2>
+                    <p>O Boolean é o tipo mais simples de todas as variaveis, ele apenas armazena um valor, que pode ser tanto true (verdadeiro) quanto false (falso). Ele é muito utilizado para checar condições (que iremos ver mais para frente).</p>
+                    <h2 id="integer">Integer</h2>
+                    <p>O Integer representa o conjunto dos números inteiros. Ele é utilizado para armazenar numeros sem parte fracionária. Com eles é possível somar, subtrair, multiplicar ou dividir (contanto que o resultado seja também um inteiro) outros inteiros.</p>
+                    <h2 id="float">Float</h2>
+                    <p>Um float armazena números com parte fracionária (3,14 por exemplo). Ele equivale ao conjunto dos racionais. É possivel converter um integer em um float sem nenhum problema, entretanto é preciso tomar cuidado, pois ao se converter um float em um int toda a sua será desprezada e o número arredondado ao inteiro mais próximo.</p>
+                    <h2 id="char">Character</h2>
+                    <p>O character, também conhecido como caractere, armazena apenas uma letra, que pode ser tanto em caixa alta quanto baixa. </p>
+                    <h2 id="array">Array</h2>
+                    <p>O array, ou vetor como é conhecido em português, é um tipo de variavel bem diferente das anteriores. Ele é, de modo bem simplificado, um "conjunto" de um outro tipo de variavel que pode ser tanto integer, float ou char. O array têm a característica de ter tamanho fixo, ou seja não pode aumentar de tamanho depois de criado. Uma das maiores vantagens do array é a possibilidade de se acessar e modificar qualquer valor dentro dele de forma bem simples: basta apenas que se conheça a posição que o elemento desejado ocupa no array. Não é possível fazer operações com o array propriamente dito, apenas com os elementos que estão contidos dentro dele.</p>
+                    <h2 id="string">String</h2>
+                    <p>O String é um caso especial de array. Ele armazena conjuntos de caracteres e espaços em branco. Por exemplo, essa frase que você está lendo poderia ser uma string, e seria exatamente do mesmo jeito que você está lendo. Na maioria das linguagens de programaçao o string possui tamanho fixo, igual ao array, mas em outras ela o tamanoho dela possa ser modificado posteriormente. Ao contrário do array, é possível fazer operações com string, como por exemplo concatenar duas string ("aba" e "cate" concatenadas formam "abacate").</p>
+                    <br/><br/>
+                    <p> Agora que você já tem uma ideia do que são os tipo de variáveis é hora de se aprofundar um pouco mais e testar seus conhecimentos.
                 </article>
             <section>
             <footer> </footer>
