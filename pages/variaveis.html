@@ -10,8 +10,8 @@
             <header id="banner"><h1>codeLearn<h1></header>
             <nav id="navbar">
                 <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="variaveis.html">Variaveis</a></li>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="variaveis.html">Variáveis</a></li>
                     <li><a href="condicoes.html">Condicionais</a></li>
                     <li><a href="avancado.html">Funções e Objetos</a></li>
                     <li><a href="about.html">Sobre o autor</a></li>
@@ -19,18 +19,22 @@
             </nav>
             <nav id="sidebar">
                 <ul><h3>Índice</h3>
+                    <li style="margin-left: -10px"><a href="#tiposvar">Tipos de variaveis</a></li>
                     <li><a href="#boolean">Boolean</a></li>
                     <li><a href="#integer">Integer</a></li>
                     <li><a href="#float">Float</a></li>
                     <li><a href="#char">Character</a></li>
                     <li><a href="#array">Array</a></li>
                     <li><a href="#string">String</a></li>
-                    <li><a href="#quiz">Teste seus conhecimentos</a></li>
+                    <li style="margin-left: -10px"><a href="#operacoes">Operações Básicas</a></li>
+                    <li><a href="#oplogicas">Operações Lógicas</a></li>
+                    <li><a href="#opmatematicas">Operações Matemáticas</a></li>
+                    <li style="margin-left: -10px"><a href="#quiz">Teste</a></li>
                 </ul>
             </nav>
             <section>
                 <article class="lesson" id="dados">
-                    <h1 id="introducao">Tipos de Variaveis</h1>
+                    <span class="introducao" id="tipovar">Tipos de Variáveis</span>
                     <p>Para entender programação é preciso primeiro entender a forma como os dados que irão ser manipulados pelo programa são vistos pelo computador. Tudo aquilo que irá ser utilizado pelo computador é armazenado na sua memória RAM. Para permitir aos programadores escreverem seus programas de uma forma mais simplificada e manipular mais fácilmente essa o que está armazenado nessa memória surgiu o que é conhecido como variaveis. As variaveis são "rótulos" que colocamos para indentificar melhor o conteúdo que está contido dentro delas. Entretanto, certos tipos de dados possuem algumas características bem diferentes de outros e trata-los da mesma maneira seria bem problemático (não podemos somar o numeral 1 a uma letra e esperar obter um resultado válido por exemplo). Assim, surgiram os tipos de variaveis.  Os tipos de variáveis servem para especificar qual é o tipo de certa variavel, e com isso quais operações são possíveis de se fazer com essa variavel. São eles: booleano (boolean), inteiro(integer), ponto flutuante(float), caractere(character), vetor(array), e cadeia de caracteres(string). Vamos ver agora o que significa cada um deles. </p>
 
                     <h3 id="boolean">Boolean</h3>
@@ -44,11 +48,24 @@
                     <h3 id="array">Array</h3>
                     <p>O array, ou vetor como é conhecido em português, é um tipo de variavel bem diferente das anteriores. Ele é, de modo bem simplificado, um "conjunto" de um outro tipo de variavel que pode ser tanto integer, float ou char. O array têm a característica de ter tamanho fixo, ou seja não pode aumentar de tamanho depois de criado. Uma das maiores vantagens do array é a possibilidade de se acessar e modificar qualquer valor dentro dele de forma bem simples: basta apenas que se conheça a posição que o elemento desejado ocupa no array. Não é possível fazer operações com o array propriamente dito, apenas com os elementos que estão contidos dentro dele.</p>
                     <h3 id="string">String</h3>
-                    <p>O String é um caso especial de array. Ele armazena conjuntos de caracteres e espaços em branco. Por exemplo, essa frase que você está lendo poderia ser uma string, e seria exatamente do mesmo jeito que você está lendo. Na maioria das linguagens de programaçao o string possui tamanho fixo, igual ao array, mas em outras ela o tamanoho dela possa ser modificado posteriormente. Ao contrário do array, é possível fazer operações com string, como por exemplo concatenar duas string ("aba" e "cate" concatenadas formam "abacate").</p>
+                    <p>O String é um caso especial de array. Ele armazena conjuntos de caracteres e espaços em branco. Por exemplo, essa frase que você está lendo poderia ser uma string, e seria exatamente do mesmo jeito que você está lendo. Na maioria das linguagens de programaçao o string possui tamanho fixo, igual ao array, mas em outras ela o tamanho dela possa ser modificado posteriormente. Ao contrário do array, é possível fazer operações com string, como por exemplo concatenar duas strings ("aba" e "cate" concatenadas formam "abacate").</p><br/>
+
+                    <span class="introducao" id="operacoes">Operações Básicas com Variaveis</span>
+                    <p>Embora já tenha uma noção de quais operações são possíveis com determinados tipos de variaveis, existem alguns detalhes importantes que ainda precisam ser discutidos.
+                    <h3 id="oplogicas">Operações Lógicas</h3>
+                    <p>São aquelas que 
+                    <h4>Atribuição</h4>
+                    <p>A atribuição é a operação utilizada para armazenar um valor, seja ele um número ou uma letra, em uma variável. Ela é representada pelo sinal de igual (=). O que estiver do lado esquerdo do igual irá receber aquilo que estiver no lado direito do igual
+                    <h4>Comparação</h4>
+                    <h3 id="opmatematicas">Operações Matemáticas</h3>
+                    <h4>Soma e Subtração</h4>
+                    <h4>Multiplicação e Divisão</h4>
+
                     <br/><br/>
-                    <p> Agora que você já tem uma ideia do que são os tipo de variáveis é hora de se aprofundar um pouco mais e testar seus conhecimentos.
+                    <p> Agora que você já tem uma ideia do que são os tipo de variáveis e como elas funcionam é hora de testar seus conhecimentos no teste abaixo. <br/><br/>
                 </article>
-                <article class="interativo">
+                <article id="interativo">
+                    <span class="introducao" id="quiz">Teste</span>
                 </article>
             <section>
             <footer id="footer">
