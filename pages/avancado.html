@@ -19,40 +19,47 @@
             </nav>
             <nav id="sidebar">
                 <ul><h3>Índice</h3>
-                    <li style="margin-left: -10px"><a href="#funcoes">Funções e Objetos</a></li>
+                    <li style="margin-left: -10px"><a href="#funcoes">Funções</a></li>
                     <li><a href="#escopo">Escopo</a></li>
-                    <li><a href="#funcoes">Funções</a></li>
-                    <li><a href="#polimorfismo">Polimorfismo</a></li>
+                    <li><a href="#structfuncao">Estrutura de uma função</a></li>
+                    <li style="margin-left: -10px"><a href="#orientacao">Orientação a Objetos</a></li>
                     <li><a href="#classes">Classes</a></li>
                     <li><a href="#objetos">Objetos</a></li>
                     <li><a href="#atributos">Atributos</a></li>
                     <li><a href="#metodos">Metodos</a></li>
-                    <li><a href="#heranca">Herança</a></li>
+                    <li><a href="#heranca">Subclasses e Herança</a></li>
                     <li style="margin-left: -10px"><a href="#quiz">Teste</a></li>
 
                 </ul>
             </nav>
             <section>
                 <article class="lesson" id="funcoes">
-                        <span class="introducao">Funções e Objetos</span>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae tortor id orci maximus hendrerit quis eu augue. Donec quam tortor, sodales ut mattis a, faucibus ac dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin porta magna orci, sed ultricies ex accumsan id. Duis id urna efficitur, ultricies odio tincidunt, sodales lorem. Praesent quis orci sagittis, placerat arcu nec, dictum quam. Ut pretium placerat nisl, eu elementum ex. Vivamus gravida auctor aliquet. Maecenas a ultricies ipsum, in hendrerit risus. Donec malesuada tempus consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-
-                        <h3>Boolean</h3>
-                        <h3>Integer</h3>
-                        <h3>Float</h3>
-                        <h3>Char</h3>
-                        <h3>Array</h3>
-                        <h3>String</h3>
-
-
-                        <p>Integer et ullamcorper lorem. Ut mi leo, rhoncus ut lacus a, posuere lacinia tellus. Suspendisse potenti. Morbi dui lorem, ullamcorper ultrices mauris quis, finibus pharetra enim. Suspendisse convallis a nibh ut vulputate. Pellentesque dignissim lacinia justo. Proin id tristique elit. Nam ullamcorper libero at rhoncus consequat. Aenean pulvinar eleifend nisl ut efficitur. Proin condimentum mi ut condimentum dignissim. Nam sit amet neque ac tellus egestas tristique eget vitae magna. Sed scelerisque mi non commodo tempus. Suspendisse euismod sem mattis, interdum leo at, vestibulum elit. Phasellus ac lorem commodo, rhoncus libero ut, blandit ipsum.</p>
+                        <span class="introducao">Funções</span>
+                        <p> Agora vamos entrar em alguns conceitos que podem até parecer um pouco complicados ou assustadores a início, mas que são de grande importância para facilitar e agilizar a vida de um programador. São os conceitos de função e de programação orientada a objeto. Com eles, teremos ferramentas para enfrentar problemas complexos e e ainda economizar bastante tempo ao reaproveitar várias linhas de código. </p>
+                        <h3 id="escopo">Escopo</h3>
+                        <p>O escopo é o contexto onde essa variável foi criada. A partir disso, é possível saber até onde dentro do programa será visível às outras variaveis e funções. Uma váriavel criada dentro de um if, por exemplo, apenas poderá ser acessada dentro desse if, caso o programador tente ele será avisado que essa váriavel não existe. Entretanto, caso a variável seja criada em uma linha fora do corpo com o resto do programa ele será chamada de variavel global. Esse tipo de variável pode ser acessada por qualquer variável ou função desse programa, ao contrário da variavel criada dentro do if, que seria apenas local.</p>
+                        <h3 id="structfuncao">Estrutura de uma função</h3>
+                        <p>Em praticamente todas as linguagens de programação, as funções possuem sempre os mesmos componentes. Toda função pode, ou não possuir parâmetros (normalmente ficam dentro de parentesis proximos ao nome da função). Parâmetros são variáveis cujos valores o programa irá receber quando for chamado. Os parametros são as "portas de acesso" da função com o resto do programa, qualquer variavel que não seja global e que você deseje que a função acesse deve ser passada como parâmetro. Uma função pode 0,1 ou vários parâmetros. As funções também podem possuir, ou não, um outro elementro, chamado de retorno. Enquanto os parâmetros são as porta de entrada dos dados para a função, o retorno é a porta de saida de dados da função. Ao ser executado, o retorno permite à função "entregar" o valor de uma variável ao programa principal. Com isso, podemos criar uma função soma, por exemplo, que receba como parametros dois números inteiros e retorne ao programa principal com a soma desses dois números para posteriores calculos.
+                        </p>
+                        <span class="introducao" id="orientacao">Orientação a Objeto</span>
+                        <p>A orientação a objetos é um paradigma de programação baseado na composiçao e na interação entre elementos chamados de objetos. Esses objetos possuem certas caracteristicas, como atributos e metodos, que facilitam a resolução de certos problemas devido à sua facilidade de organizar e estruturar certos tipos de soluções que seriam bem mais complicadas utilizando a programação estruturada. </p>
+                        <h3 id="classes">Classes</h3>
+                        <p>Um classe representa um conjunto de objetos com características semelhantes. Classes possuem metodos e atributos, nos quais servem como um tipo de "forma" para os objetos. Todos os objetos gerados a partir de uma classe irão possuir mesmos atributos e metodos dessa classe. </p>
+                        <h3 id="objetos">Objetos</h3>
+                        <p>Os objetos são instâncias dessas classes, e possuem todas as caracteristicas como atributos e metodos da classe na qual foi instanciado. Por exemplo, todas pessoas possuem biologicamente o código genetico, ou seja as mesmas caracteristicas, logo poderiamos dizer que somos objetos da classe pessoa</p>
+                        <h3 id="atributos">Atributos</h3>
+                        <p>Atributos são as estruturas de dados presentes na classe. Por exemplo, todas pessoas possuem RG, CPF e Data de Nascimento, logo na classe pessoa deve existir os atributos RG, CPF e data de nascimento. Esses atributos são variáveis que armazenam os dados relacionados a essa classe</p>
+                        <h3 id="metodos">Metodos</h3>
+                        <p>Os métodos são basicamente as ações das quais os objetos daquela classe poderão executar. Nós podemos andar, respirar, correr, pular; logo na nossa classe pessoa deveriam também existir esses metodos. </p>
+                        <h3 id="heranca"> Subclasses e Herança</h3>
+                        <p>A programação orientada a objeto também nos traz uma ferramenta bem poderosa quando pretendemos utilizar várias classes. É o conceito de Herança. Com ela, uma classe pode herdar metodos e atributos de uma classe mãe. A subclasse, como seria chamada, possuiria exatamente os mesmos metôdos e atributos da classe mãe, entretanto ela pode sobreescreve-los e fazer uma nova implementação dos metodos e atributos existentes na classe mãe caso seja necessário. Voltando ao nosso exemplo da classe pessoa, caso quissemos poderiamos criar uma classe criança que além possuir todos os metodos e atributos existentes na classe pessoa ela também poderia ter como atributo medo de escuro, ou nome do seu personagem favorito, sem que ocorra não alteração nos objetos existentes da classe pessoa. </p>
                 </article>
                 <article id="quiz">
                 </article>
             <section>
             <footer id="footer">
-            Todo o conteúdo desse site está sob a licença
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a> O código utilizado está disponivel no <a href="https://github.com/pebmp17/CodeLearn"> Github</a><span style="float:right">Duvidas ou correções: pedrobmp3@gmail.com</span>
+                Todo o conteúdo desse site está sob a licença
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a> O código utilizado está disponivel no <a href="https://github.com/pebmp17/CodeLearn"> Github</a><span style="float:right">Duvidas ou correções:<a href="mailto:pedrobmp3@gmail.com">pedrobmp3@gmail.com</a></span>
             </footer>
         </div>
     </body>
