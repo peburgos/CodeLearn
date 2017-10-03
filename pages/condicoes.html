@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>codeLearn - Condicionais</title>
         <link rel="stylesheet" type="text/css" href="../stylesheet/index.css" />
+        <script src="../js/p5.min.js"></script>
+        <script src="../js/quizCondicionais.js"></script>
     </head>
     <body>
         <div id="content">
@@ -27,7 +29,7 @@
                     <li><a href="#while">While</a></li>
                     <li><a href="#do">Do...while</a></li>
                     <li><a href="#for">For</a></li>
-                    <li style="margin-left: -10px"><a href="#quiz">Teste</a></li>
+                    <li style="margin-left: -10px"><a href="#quiz">Quiz</a></li>
                 </ul>
             </nav>
             <section>
@@ -35,30 +37,31 @@
                     <span class="introducao" id="condicionais">Condicionais</span>
                     <p>As estruturas condicionais são aquilo que permite ao programador ter a possibilidade fazer o seu programa ter certo comportamento apenas quando certas condições forem cumpridas. Um cliente só pode sacar dinheiro caso ele tenha algum na sua conta, por exemplo.</p>
 
-                    <h3>if</h3>
+                    <h3 id="if">if</h3>
                     <p>O if é a estrutura condição mais simples, porém também pode ser considerada a mais importante. Ele funciona na seguinte maneira: caso a expressão que está dentro do if seja verdadeira(true) ele executa o bloco de código dentro dele, caso contrário ele "pula" essa parte e começa a executar a próxima linha existente depois desse bloco.</p>
 
-                    <h3>else</h3>
+                    <h3 id="else">else</h3>
                     <p>O else só pode existir quando está dentro do mesmo bloco de código de um if, proxímo a ele e sem que haja outro else para esse mesmo if. O else determina o que irá ocorrer caso a expressão contida dentro do if não seja verdadeira(por isso necessita de um if para que ele possa funcionar). Agora você pode estar se perguntando: "Mas se quando a expressão do if não é verdadeira ele já não vai automaticamente para a proxíma linha de código depois do if sem ter um else, então para que que ele existe? A resposta é bem simples: caso a expressão do if seja verdadeira e não exista um else o programa irá executar tanto o existe dentro do if quando o que existe depois, o que não ocorreria com um else pois ele executaria ou o bloco de código dentro do if ou o bloco de código dentro do else, e não os dois. </p>
 
-                    <h3>else if</h3>
+                    <h3 id="else if">else if</h3>
                     <p>O else if é exatamente aquilo que ele parece ser: uma junção do if com o else. Ele também necessita de um if para existir, embora possa ter mais de um else if para um if e funciona da seguinte maneira: caso a condição do if não seja verdadeira a condição existente no else if será testada, caso ele seja verdadeira executa-se o bloco de código contido dentro ele, caso não o programa vai até o proximo else if ou else a ser executado. </p>
 
-                    <h2>Loops</h2>
+                    <h2 id="loops">Loops</h2>
                     <p>Os laços de repetição, ou loops, são estruturas um pouco diferente dos if e else que vimos até agora. Caso a condição do laço seja cumprida o programa irá executar e repetir o código quantas vezes for necessário até que ela se torna falsa e saia do loop.</p>
 
-                    <h3>while</h3>
+                    <h3 id="while">while</h3>
                     <p>O while funciona da seguinte maneira: Ele checa se a condição expressa dentro dele é verdadeira, se for executa o código e, chegando no final do bloco de código dentro dele, ele checa novamente e caso continue verdadeira ele repete novamente o mesmo bloco de código até que na vez que ele checar a condição e ele for falsa, aí ele sai do laço e vai até a proxima linha de código que não pertence ao laço.
                     </p>
 
-                    <h3>do...while</h3>
+                    <h3 id="do">do...while</h3>
                     <p>O do...while funciona da mesma maneira do while, o único detalhe é que ele primeiro executa o bloco de código pra depois checar se a condição é verdadeira ou não. Ou seja, caso você utilize o do..while pode ter a certeza de que tudo que estiver dentro do laço será executado pelo menos uma vez e tome as precauções necessárias para isso.</p>
 
-                    <h3>for</h3>
+                    <h3 id="for">for</h3>
                     <p>O for é, sem duvidas, a estrutura mais complexa que vimos até agora. Independentemente da forma com que a linguagem de programação apresente ela em um for sempre teremos um o contador no qual irá registrar um valor inicial e marcar o inicio do laço, uma expressão para indicar a condição de parada, e número para indicar o quanto o contador vai ser incrementado (ou decrementado). Ele é muito utilizado para percorrer arrays (utilizando-se do valor do contador como um indíce para o array), ou para casos em que se sabe quantas vezes serão necessárias executar esse bloco de código.</p>
+                    <br/>
                 </article>
-                <article id="quiz">
-                </article>
+                <span class="introducao" id="quiz">Quiz</span><br/><br/><br/>
+                <div id="quiz-holder"></div>
             <section>
             <footer id="footer">
                 Todo o conteúdo desse site está sob a licença
