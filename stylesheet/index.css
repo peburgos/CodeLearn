@@ -6,11 +6,6 @@
 body{
     background-color: #33691E;
 }
-/*
-li{
-    padding-right: 20px;
-}
-*/
 article{
     padding-left: 10px;
     padding-right: 10px;
@@ -56,13 +51,13 @@ article{
 
 #sidebar
 {
-border-radius: 8px;
-border-bottom-style:ridge;
-background-color: #81C784;
-float: right;
-width: 180px;
-padding: 0% 0% 0% 0%;
-margin: 7% 3% 0 0;
+    border-radius: 8px;
+    border-bottom-style:ridge;
+    background-color: #81C784;
+    float: right;
+    width: 180px;
+    padding: 0% 0% 0% 0%;
+    margin: 7% 3% 0 0;
 }
 #sidebar h3 { margin: 0; }
 
@@ -72,6 +67,12 @@ margin: 7% 3% 0 0;
 
 .introducao{
     font-size: 180%;
+}
+
+#bio{
+    margin: 0 auto;
+    text-align: center;
+    width:60%;
 }
 
 #aboutimg{
@@ -101,10 +102,4 @@ margin: 7% 3% 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#bio{
-    margin: 0 auto;
-    text-align: center;
-    width:60%;
 }

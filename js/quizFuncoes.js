@@ -25,7 +25,7 @@ function setup(){
     canvas.parent('quiz-holder');
 
   perguntas[0] = new Pergunta("Você está pronto para começar o quiz?"," "," "," ","Sim",4);
-  perguntas[1] = new Pergunta("O que significa a palavra escopo?","Um tipo de variável","Um tipo de estrutura condicional","O contexto no qual a variável foi criada","Um outro nome para os parâmetros de uma função",3);
+  perguntas[1] = new Pergunta("O que significa a palavra escopo?","Um tipo de variável","Um tipo de estrutura condicional","O contexto no qual a variável foi criada e está inserida dentro do programa","Um outro nome para os parâmetros de uma função",3);
   perguntas[2] = new Pergunta("Para que serve os parâmetros de uma função?","Para retornar valores ao programa principal","Para receber valores do programa principal","Para converter variaveis de um tipo para outro","Para fazer a função existir, pois sem ele não é possível ter uma funçâo",2);
   perguntas[3] = new Pergunta("Qual dessas estruturas são imprecindíveis para um função funcionar?","O retorno","Os parâmetros","O escopo","Nenhuma das alternativas",4);
   perguntas[4] = new Pergunta("Quais dessas estruturas de uma função serve respectivamente para receber e para enviar dados ao programa principal?","Os parâmetros e o retorno", "O retorno e os parâmetros", "Os parâmetros e o escopo", "Os parâmetros e a classe",1);
