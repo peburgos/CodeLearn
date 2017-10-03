@@ -18,6 +18,8 @@ var ansBoxY1 = 360; //primeira linha
 var ansBoxY2 = 498; //segunda coluna
 var ansBoxWidth = 360;
 var ansBoxHeight = 132;
+var alertTime = 0;
+var cheerTime = 0;
 
 function setup(){
     var canvas = createCanvas(800,600);
@@ -72,14 +74,45 @@ function draw(){
   text(perguntas[estado].alternativaC,ansBoxX1, ansBoxY2,ansBoxWidth,ansBoxHeight);
   text(perguntas[estado].alternativaD,ansBoxX2, ansBoxY2,ansBoxWidth,ansBoxHeight);
   textAlign(LEFT,LEFT);
+  if ((alertTime<120)&&(alertTime>0)) {
+    fill(0,0,0,75);
+    rect(width/2,height/2,width,height);
+    fill(150,0,0);
+    rect(width/2,height/2,400,300);
+    fill(255);
+    text("Alternativa Errada!",width/2-70,height/2);
+    alertTime++; 
+  }
+  else{
+    alertTime = 0;
+  }
+  if ((cheerTime<120)&&(cheerTime>0)) {
+    fill(0,0,0,75);
+    rect(width/2,height/2,width,height);
+    fill(51,105,30);
+    rect(width/2,height/2,400,300);
+    fill(255);
+    text("Resposta Certa!",width/2-70,height/2);
+    cheerTime++; 
+  }
+  else{
+    cheerTime = 0;
+  }
 }
 
 
 function mousePressed(){
   if((((((mouseX>(ansBoxX1-ansBoxWidth*0.5) && mouseX <ansBoxX1+ansBoxWidth*0.5)&&(mouseY>(ansBoxY1-ansBoxHeight*0.5) && mouseY<ansBoxY1+ansBoxHeight*0.5))&&(perguntas[estado].resposta==1))||(((mouseX>(ansBoxX2-ansBoxWidth*0.5) && mouseX <ansBoxX2+ansBoxWidth*0.5)&&(mouseY>(ansBoxY1-ansBoxHeight*0.5) && mouseY<ansBoxY1+ansBoxHeight*0.5))&&(perguntas[estado].resposta==2)))||(((mouseX>(ansBoxX1-ansBoxWidth*0.5) && mouseX <ansBoxX1+ansBoxWidth*0.5)&&(mouseY>(ansBoxY2-ansBoxHeight*0.5) && mouseY<ansBoxY2+ansBoxHeight*0.5))&&(perguntas[estado].resposta==3)))||(((mouseX>(ansBoxX2-ansBoxWidth*0.5) && mouseX <ansBoxX2+ansBoxWidth*0.5)&&(mouseY>(ansBoxY2-ansBoxHeight*0.5) && mouseY<ansBoxY2+ansBoxHeight*0.5))&&(perguntas[estado].resposta==4))){ //Hitbox para (1,1)
-     if (estado<11)
-        estado++;
-      else
-        estado =0;
-   }
+    if (estado<11){
+      estado++;
+      if (estado>1)
+        cheerTime = 1;
+    }
+    else
+      estado =0;
+  }
+  else{
+    if((estado>0)&&(estado<11))
+      alertTime = 1;
+  }
 }
