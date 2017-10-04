@@ -46,7 +46,17 @@ article{
     padding-bottom: 5px;
     background-color: #2E7D32;
     color: white;
-    font-size: 80%;
+    font-size: 80%;    
+    vertical-align: top;
+}
+
+#contact_footer{
+    float:right;
+}
+
+#license{
+    
+    vertical-align: top;
 }
 
 #sidebar
@@ -57,7 +67,7 @@ article{
     float: right;
     width: 180px;
     padding: 0% 0% 0% 0%;
-    margin: 7% 3% 0 0;
+    margin: 7% 3% 0 20px;
 }
 #sidebar h3 { margin: 0; }
 
@@ -78,7 +88,7 @@ article{
 #aboutimg{
     margin: 0 auto;
     padding-bottom: 15px;
-    border-radius:130px;
+    clip-path: circle(120px at center);
     text-align: center;
     display: block;
     width:25%;
